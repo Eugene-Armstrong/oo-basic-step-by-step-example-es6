@@ -1,6 +1,5 @@
-import Person from "../../src/practice_7/person.js";
-import Student from "../../src/practice_7/student.js";
-import Class from "../../src/practice_7/class.js";
+import Person from "../../src/practice_8/person.js";
+import Student from "../../src/practice_8/student.js";
 export default class Teacher extends Person{
     constructor(id,name,age,klass){
         super(id,name,age);

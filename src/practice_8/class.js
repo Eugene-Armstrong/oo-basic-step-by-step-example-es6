@@ -1,14 +1,17 @@
-import Student from "../../src/practice_7/student.js";
+import Student from "../../src/practice_8/student.js";
 export default class Class{
-    leader;
     constructor(number){
         this.number = number;
     }
+    leader;
     getDisplayName(){
         return `Class ${this.number}`;
     }
     assignLeader(student){
-        leader = student.name;
-        return this.leader;
+        if(this.number === student.klass.number){
+            this.leader = student;
+        }else{
+            this.leader = undefined;
+        }
     }
 }
